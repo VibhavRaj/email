@@ -47,6 +47,9 @@ body {
 .item7 {
   background: #29b6f6;
 }
+.item7 {
+  background: red;
+}
 /**********Material theme************/
 .mat-icon {
   color: #989898;
