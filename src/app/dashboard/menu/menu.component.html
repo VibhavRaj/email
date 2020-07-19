@@ -1,0 +1,83 @@
+<mat-sidenav-container>
+  <!-- <mat-sidenav #sidenav  mode="side" opened class="nav_dashboard"> -->
+  <mat-sidenav #sidenav class="nav_dashboard">
+    <h1 class="company_logo">Automation</h1>
+    <ul>
+      <li>
+        <a routerLink="" (click)="sidenav.toggle()" class="link">Dashboard</a>
+      </li>
+      <li>
+        <a routerLink="scheduler" (click)="sidenav.toggle()" class="link"
+          >Group</a
+        >
+      </li>
+      <li>
+        <a routerLink="two" (click)="sidenav.toggle()" class="link">Sheduler</a>
+      </li>
+      <li>
+        <a routerLink="one" (click)="sidenav.toggle()" class="link">Contacts</a>
+      </li>
+      <li>
+        <a routerLink="contacts" (click)="sidenav.toggle()" class="link"
+          >Tasks</a
+        >
+      </li>
+      <li>
+        <a routerLink="" (click)="sidenav.toggle()" class="link">Reports</a>
+      </li>
+      <li>
+        <a routerLink="three" (click)="sidenav.toggle()" class="link"
+          >Notifications</a
+        >
+      </li>
+      <li>
+        <a routerLink="four" (click)="sidenav.toggle()" class="link">Message</a>
+      </li>
+      <li>
+        <a routerLink="" (click)="sidenav.toggle()" class="link">Template</a>
+      </li>
+      <li>
+        <a routerLink="" (click)="sidenav.toggle()" class="link">Settings</a>
+      </li>
+      <li>
+        <a routerLink="" (click)="sidenav.toggle()" class="link"
+          >Contact Support</a
+        >
+      </li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <!-- <mat-icon (click)="sidenav.toggle()" class="menu">menu</mat-icon> -->
+        <div class="menu-button" (click)="sidenav.toggle()">
+          <mat-icon class="menu">menu</mat-icon>
+        </div>
+        <h1>Dashboard</h1>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon"> notifications</mat-icon>
+        <mat-icon class="example-icon" (click)="ended.toggle()"
+          >account_circle</mat-icon
+        >
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="main">
+      <!-- <div class="box-2">
+          <br />
+          <div class="inputdata-circle">
+            <input type="text" class="input-default" placeholder="Username" />
+            <mat-icon>add</mat-icon>
+          </div>
+          <mat-icon class="circle-button">add</mat-icon>
+          <input type="text" class="input-circle" />
+  
+          <mat-icon matSuffix>account_circle</mat-icon>
+        </div>
+        <div class="box-2"></div>
+        <div class="box-2"></div>
+        <div class="box-2"></div> -->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+  <mat-sidenav #ended ended mode="side" position="end">End content</mat-sidenav>
+</mat-sidenav-container>

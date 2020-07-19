@@ -1,0 +1,133 @@
+.blog {
+  width: 100%;
+  min-height: 100%;
+  max-height: auto;
+  background: #fafafa;
+}
+.main-blog {
+  width: 100%;
+  min-height: 100%;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .demo-blog {
+  width: 200px;
+  margin: 10px;
+  height: auto;
+}
+.blog .demo-blog:first-child {
+  flex-grow: 5;
+}
+.blog .demo-blog:last-child {
+  flex-grow: 1;
+}
+.blog-pop {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+.blog-popular {
+  display: flex;
+  padding: 0 !important;
+}
+.blog-popular > h1 {
+  margin-bottom: -10px;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.demo-blog h2 {
+  line-height: 25px;
+}
+.blog-content {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.blog-content:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.circle-blog {
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0 !important;
+  margin-bottom: 20px;
+}
+.img-circle {
+  border-radius: 10px 10px 0 0;
+}
+.content-circle {
+  padding: 10px 30px 30px 30px;
+}
+.status {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.status .inputdata {
+  background: #f5f5f5;
+  padding: 4px;
+  border: none;
+}
+
+.status .input-default {
+  background: #f5f5f5;
+}
+.status mat-icon {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+.status .but-send {
+  background: #def2fe;
+}
+.content-circle h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.content-circle p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.main-small-blog {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.small-blog {
+  flex: 25%;
+  max-width: 25%;
+  /* margin: 4px;
+  height: auto !important; */
+}
+.small-blog h3 {
+  line-height: 25px;
+}
+.small-blog .content-circle {
+  padding: 0 10px 10px 10px;
+}
+.small-blog .status {
+  padding: 10px;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .small-blog {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .small-blog {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+<section class="login">
+  <h1 class="bold-4">Login</h1>
+  <div class="inputdata">
+    <input type="text" class="input-default" placeholder="Username" />
+    <mat-icon>account_circle</mat-icon>
+  </div>
+  <div class="inputdata">
+    <input
+      [type]="hide ? 'password' : 'text'"
+      class="input-default"
+      placeholder="Password"
+    />
+    <mat-icon (click)="hide = !hide" [attr.aria-pressed]="hide">{{
+      hide ? "visibility_off" : "visibility"
+    }}</mat-icon>
+  </div>
+  <div class="grid">
+    <a href="" class="link button-primary-darker" (click)="loginsubmit()"
+      >Submit</a
+    >
+    <a href="" class="link button-primary-lighter">Cancel</a>
+  </div>
+</section>

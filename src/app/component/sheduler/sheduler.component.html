@@ -1,0 +1,87 @@
+<div class="box-2">
+  <div class="demodata">
+    <div class="filter">
+      <div class="inputdata">
+        <input type="text" class="input-default" placeholder="Filter" />
+        <mat-icon>account_circle</mat-icon>
+      </div>
+      <span class="example-spacer"></span>
+      <div class="inputdata-filter">
+        <a class="button-default" (click)="openSnackBar()">Add</a>
+      </div>
+      <div class="inputdata-filter">
+        <a class=" button-default">Import</a>
+      </div>
+      <div class="inputdata-filter">
+        <a class=" button-default">Export</a>
+      </div>
+      <div class="inputdata-filter" [matMenuTriggerFor]="beforeMenu">
+        <a class=" button-default"><mat-icon>sort</mat-icon></a>
+      </div>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
+    <div class="example-container">
+      <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef>Weight</th>
+          <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+        </ng-container>
+        <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef>Symbol</th>
+          <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+        </ng-container>
+        <tr
+          mat-header-row
+          *matHeaderRowDef="displayedColumns; sticky: true"
+        ></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[10, 25, 100]"></mat-paginator>
+    </div>
+  </div>
+  <div class="demodata">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Create Group
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <input type="text" class="input-square" placeholder="Group Name" />
+        <input type="text" class="input-square" placeholder="From Email" />
+        <input type="text" class="input-square" placeholder="Reply To" />
+        <input type="text" class="input-square" placeholder="Subject" />
+        <a href="" class="link button-primary-lighter">No</a>
+        <a href="" class="link button-primary-darker">Yes</a>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Group List
+          </mat-panel-title>
+          <!-- <mat-panel-description>
+            Currently I am {{ panelOpenState ? "open" : "closed" }}
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <!-- <div class="demodata"></div>
+  <div class="demodata"></div> -->
+</div>

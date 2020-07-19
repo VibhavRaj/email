@@ -1,0 +1,230 @@
+<section id="one">
+  <div class="one-heading">
+    <div>
+      <h1>Schedule</h1>
+    </div>
+    <span class="spacer"></span>
+    <div>
+      <mat-icon class="icon">add</mat-icon>
+      <mat-icon class="icon">refresh</mat-icon>
+      <mat-icon class="icon">search</mat-icon>
+      <mat-icon class="icon">event_available</mat-icon>
+      <mat-icon class="icon">event_note</mat-icon>
+      <mat-icon class="icon">filter_list</mat-icon>
+    </div>
+  </div>
+  <div class="one-contact">
+    <table id="table">
+      <tr>
+        <th>Id</th>
+        <th>Template Name</th>
+        <th>Group</th>
+        <th>Status</th>
+        <th>action</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raj</td>
+        <td>Raj88@gmail.com</td>
+        <td>9834787823</td>
+        <td>
+          <mat-icon class="icon" (click)="alldata()">event_note</mat-icon>
+        </td>
+      </tr>
+    </table>
+
+    <!-- <div class="list-all-data" *ngIf="show">
+        <ul>
+          <li>Name</li>
+          <li>Email</li>
+          <li>Phone</li>
+          <li>status</li>
+          <li>One</li>
+        </ul>
+        <span class="spacer"></span>
+        <ul>
+          <li><mat-icon class="icon">add</mat-icon></li>
+          <li><mat-icon class="icon">update</mat-icon></li>
+          <li><mat-icon class="icon">call</mat-icon></li>
+          <li><mat-icon class="icon">delete</mat-icon></li>
+        </ul>
+      </div> -->
+    <!-- <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+  
+          <mat-form-field>
+            <mat-label>First name</mat-label>
+            <input matInput />
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Age</mat-label>
+            <input matInput type="number" min="1" />
+          </mat-form-field>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{ panelOpenState ? "open" : "closed" }}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+      </mat-accordion> -->
+  </div>
+  <mat-paginator
+    [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+  >
+  </mat-paginator>
+  <!-- <div>
+      <mat-icon class="icon">play_for_work</mat-icon>
+      <mat-icon class="icon">undo</mat-icon>
+      <mat-icon class="icon">redo</mat-icon>
+      <mat-icon class="icon">add</mat-icon>
+      <mat-icon class="icon">event_available</mat-icon>
+      <mat-icon class="icon">event_note</mat-icon>
+      <mat-icon class="icon">share</mat-icon>
+      <mat-icon class="icon">notifications</mat-icon>
+      <mat-icon class="icon">more</mat-icon>
+      <mat-icon class="icon">more_horiz</mat-icon>
+      <mat-icon class="icon">more_vert</mat-icon>
+      <mat-icon class="icon">refresh</mat-icon>
+      <mat-icon class="icon">menu</mat-icon>
+      <mat-icon class="icon">close</mat-icon>
+      <mat-icon class="icon">check</mat-icon>
+      <mat-icon class="icon">apps</mat-icon>
+      <mat-icon class="icon">local_post_office</mat-icon>
+      <mat-icon class="icon">local_phone</mat-icon>
+      <mat-icon class="icon">local_offer</mat-icon>
+      <mat-icon class="icon">remove_red_eye</mat-icon>
+      <mat-icon class="icon">photo_size_select_actual</mat-icon>
+      <mat-icon class="icon">photo_library</mat-icon>
+      <mat-icon class="icon">photo</mat-icon>
+      <mat-icon class="icon">edit</mat-icon>
+      <mat-icon class="icon">attachment</mat-icon>
+      <mat-icon class="icon">notes</mat-icon>
+      <mat-icon class="icon">insert_drive_file</mat-icon>
+      <mat-icon class="icon">insert_invitation</mat-icon>
+      <mat-icon class="icon">send</mat-icon>
+      <mat-icon class="icon">sort</mat-icon>
+      <mat-icon class="icon">reply</mat-icon>
+      <mat-icon class="icon">mail</mat-icon>
+      <mat-icon class="icon">filter_list</mat-icon>
+      <mat-icon class="icon">drafts</mat-icon>
+      <mat-icon class="icon">create</mat-icon>
+      <mat-icon class="icon">delete</mat-icon>
+      <mat-icon class="icon">mail_outline</mat-icon>
+      <mat-icon class="icon">call</mat-icon>
+      <mat-icon class="icon">queue</mat-icon>
+      <mat-icon class="icon">note</mat-icon>
+      <mat-icon class="icon">warning</mat-icon>
+      <mat-icon class="icon">error</mat-icon>
+      <mat-icon class="icon">error_outline</mat-icon>
+      <mat-icon class="icon">visibilty</mat-icon>
+      <mat-icon class="icon">visibilty_off</mat-icon>
+      <mat-icon class="icon">verified_user</mat-icon>
+      <mat-icon class="icon">turned_in</mat-icon>
+      <mat-icon class="icon">turned_in_not</mat-icon>
+      <mat-icon class="icon">update</mat-icon>
+      <mat-icon class="icon">thumb_up</mat-icon>
+      <mat-icon class="icon">thumb_down</mat-icon>
+      <mat-icon class="icon">settings</mat-icon>
+      <mat-icon class="icon">schedule</mat-icon>
+      <mat-icon class="icon">search</mat-icon>
+      <mat-icon class="icon">power_settings_new</mat-icon>
+      <mat-icon class="icon">note_add</mat-icon>
+      <mat-icon class="icon">info</mat-icon>
+      <mat-icon class="icon">delete</mat-icon>
+      <mat-icon class="icon">copyright</mat-icon>
+      <mat-icon class="icon">calender_today</mat-icon>
+      <mat-icon class="icon">bookmark</mat-icon>
+    </div> -->
+</section>

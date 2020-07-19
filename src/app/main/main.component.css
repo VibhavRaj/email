@@ -1,0 +1,17 @@
+.one {
+  color: greenyellow !important;
+}
+.two {
+  color: blue !important;
+}
+.three {
+  font-size: 50px !important;
+  color: red !important;
+}
+.border {
+  border: 2px solid red;
+  padding: 20px;
+}
+h2 {
+  line-height: 50px;
+}
